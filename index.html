@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roblox Chat Overlay</title>
+    <script src="https://iframe.chat/scripts/main.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay-shell">
+      <div id="loader" class="loader-screen">
+        <div class="spinner"></div>
+        <p>Chargement du chat...</p>
+      </div>
+
+      <div id="content" class="iframe-content" style="display:none;">
+        <iframe
+          id="chattable"
+          src="https://iframe.chat/embed/index.html?chat=000"
+          frameborder="0"
+          title="Chattable"
+        ></iframe>
+      </div>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
